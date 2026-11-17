@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'coolvetica';
+    src: url('Coolvetica Rg.otf') format('opentype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("fundo1.jpg");
+    background-size: cover;       
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: #000000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-height: 70px; 
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 23px 24px;
+    font-family: 'coolvetica', sans-serif;
+    font-size: larger;
+}
+
+.navbar li a:hover {
+    background-color: #1d1d1d;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar li a {
+        padding: 15px 12px;
+        font-size: medium;
+    }
+}
